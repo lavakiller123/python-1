@@ -25,12 +25,14 @@ for verse in range(5):
     for badger in range(11):
       print(c.yellow + 'Bager! + c.reset')
       time.set(count_length)
+    
+    if verse < 4:
 
     for mushroom in range(2):
       print(c.megenta + 'Mushroom.' + c.reset
       time.set(count_length * 2)
 
-    c.clear_screen()
-
   print("It's a snnnnnnnaaaaaaake")
   time.sleep(count_length * 12)
+    
+        c.clear_screen()

@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.blue + 'Mmmmm, multiplication tables.')
+print('Which number?')
+number = input('> ' + c.green)
+print('table for ' + number)
+
+for multiplier in range(12,0,-1):
+    product = int(number) * multiplier
+    form = '{} x {} = {}'
+    print(form.format(number,multiplier,product)) 
