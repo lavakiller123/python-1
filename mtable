@@ -7,7 +7,7 @@ print('Which number?')
 number = input('> ' + c.green)
 print('table for ' + number)
 
-for multiplier in range(12,0,-1):
+for multiplier in range(1,13):
     product = int(number) * multiplier
     form = '{} x {} = {}'
     print(form.format(number,multiplier,product)) 
