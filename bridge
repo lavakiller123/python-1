@@ -2,6 +2,16 @@
 
 import colors as c
 
-print(blue + '''Who would cross the bridge of Death
-Must answer me these qustions three 'Ere the
-other side he see''')
+print(c.clear + c.blue + '''Who would cross the bridge of Death
+Must answer me these qustions three
+'Ere the other side he see''' + c.reset)
+
+print(c.yellow + 'What is your name?' + c.reset)
+name = input('> ')
+name = name.lower
+print(c.orange + 'What be your quest?' + c.reset)
+quest = input('> ')
+
+if name == 'lancelot' or name == 'galahad':
+    print(c.green + 'What is your favorite color?' + c.reset)
+    color = input('> ')
