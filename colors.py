@@ -24,4 +24,5 @@ reset = "\033[0m"
 
 import random
 def random_color():
-    return random.choice([yellow, orange, red, magenta, violet, blue, cyan, green])
+    return random.choice([yellow, orange,
+    red, magenta, violet, blue, cyan, green])
