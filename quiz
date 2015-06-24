@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import fluffy as quiz
+#import fluffy as quiz
+import gd as quiz
 import colors as c
 
 print(c.clear)
