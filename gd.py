@@ -3,13 +3,13 @@
 import colors as c
 from utils import ask
 
-intro = c.magenta + '''
+intro = c.blue + '''
 Welcome to my Geometry Dash quiz.
 Let's test your knowledge...
 '''
 
 def q1():
-    answer = ask("What is the hardest colorto get?")
+    answer = ask("What is the hardest color to get?")
     if answer == "black":
         print(":)")
         return True
