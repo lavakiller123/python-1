@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
 import colors as c
-print("WELCOME TO THE EPIC madlibs PROGRAM")
+print(c.clear + c.red + '''
+Welcome To The Madlibs PROGRAM!
+''' + c.reset)
 
+text = '''
+I 
