@@ -1,9 +1,23 @@
 #!/usr/bin/env python3
 
 import colors as c
-print(c.clear + c.red + '''
+from utils import ask
+
+print(c.reset + c.blue + '''
 Welcome To The Madlibs PROGRAM!
 ''' + c.reset)
 
 text = '''
-I 
+I love going to {noun} and doing {verb}. I also like doing mischief 
+like {verb}.
+'''
+
+words = {
+    "noun" : {},
+    "verb1" : {},
+    "verb2" : {}
+}
+
+answers = {}
+for key in words:
+    answer = ask("Enter " + key + ":")    
