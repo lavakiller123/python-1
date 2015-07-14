@@ -3,21 +3,23 @@
 import colors as c
 from utils import ask
 
-print(c.reset + c.blue + '''
-Welcome To The Madlibs PROGRAM!
-''' + c.reset)
-
 text = '''
-I love going to {noun} and doing {verb}. I also like doing mischief 
-like {verb}.
+THE QUIZ OF DEATH
+I love going to {noun1} and doing {verb1}. I also like doing mischief 
+like {verb2}. Also I like going to {noun2}. With my friends {person1}
+and {person2}.
 '''
 
 words = {
-    "noun" : {},
-    "verb1" : {},
-    "verb2" : {}
+    "noun1" : None,
+    "noun2" : None,
+    "verb1" : None,
+    "verb2" : None,
+    "person1" : None,
+    "person2" : None
 }
 
-answers = {}
 for key in words:
-    answer = ask("Enter " + key + ":")    
+    words[keyword] = ask("keyword.rstrip('0123456789') + ': ')
+
+print(c.clear + text.format(**words))
