@@ -20,7 +20,7 @@ words = {
 }
 
 for key in words:
-    words[key] = c.red + ask("key.rstrip('0123456789') + ': ') + c.reset
+    words[key] = c.red + ask(key.rstrip('0123456789') + ': ') + c.reset
 
 print(c.clear + text.format(**words))
 
