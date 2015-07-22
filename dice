@@ -1,1 +1,54 @@
 #!/usr/bin/env python3
+
+import colors as c
+import random
+
+dice = []
+
+dice.append('''
+  -------
+ |       |
+ |   o   | 
+ |       |
+  -------
+''')
+dice.append('''
+  -------
+ | o     |
+ |       | 
+ |     o |
+  -------
+''')
+dice.append('''
+  -------
+ | o     |
+ |   o   | 
+ |     o |
+  -------
+''')
+dice.append('''
+  -------
+ | o   o |
+ |       | 
+ | o   o |
+  -------
+''')
+dice.append('''
+  -------
+ | o   o |
+ |   o   | 
+ | o   o |
+  -------
+''')
+dice.append('''
+  -------
+ | o   o |
+ | o   o | 
+ | o   o |
+  -------
+''')
+
+while True:
+    die = random.choice(dice)
+    print(c.clear + c.random_color() + die + c.reset)
+    input()
