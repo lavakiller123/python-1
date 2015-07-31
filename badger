@@ -3,7 +3,7 @@
 import time
 import colors as c
 
-count_length = 0.387
+count = 0.387
 
 snake = '''
 
@@ -16,23 +16,12 @@ snake = '''
  |___/_| |_|\__,_|_|\_\___|
 
 '''
-
-while True:
-c.clear_screen()
-
-for verse in range(5):
-
-    for badger in range(11):
-      print(c.yellow + 'Bager! + c.reset')
-      time.set(count_length)
-    
-    if verse < 4:
-
-    for mushroom in range(2):
-      print(c.megenta + 'Mushroom.' + c.reset
-      time.set(count_length * 2)
-
-  print("It's a snnnnnnnaaaaaaake")
-  time.sleep(count_length * 12)
-    
-        c.clear_screen()
+for n in range (4):
+    print(c.cl)
+    for n in range (11):
+        print(c.y + 'Badger!' + c.x)        
+        time.sleep(count)
+        
+        for n in range (2):
+            print(c.m + 'Mushroom!' + c.x)
+           time.sleep(count) 
